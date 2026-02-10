@@ -45,8 +45,8 @@ define gui.insensitive_color = '#7070707f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#e066a3'
-define gui.hover_muted_color = '#ea99c1'
+define gui.muted_color = '#1e3fad'
+define gui.hover_muted_color = '#271f6d'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color   = "#E8F8FF"
@@ -67,7 +67,7 @@ define gui.name_text_font = "fonts/Exo2-Regular.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui.text_size = 42
 
 ## The size of character names.
 define gui.name_text_size = 45
@@ -98,7 +98,10 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 278
+define gui.textbox_height = 200
+define gui.textbox_background = Solid("#00000080")
+
+
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
@@ -108,7 +111,7 @@ define gui.textbox_yalign = 1.0
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_ypos = 5
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -132,10 +135,10 @@ define gui.namebox_tile = False
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
 define gui.dialogue_xpos = 0.5
-define gui.dialogue_ypos = 0.85
+define gui.dialogue_ypos = 45
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 0.9
+define gui.dialogue_width = 1.0
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.

@@ -96,35 +96,37 @@ style frame:
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):
-
     window:
         id "window"
-        style "say_window"
         xalign 0.5
-        xsize 1200
+        yalign 1.0
+        yoffset 0
+        xsize 1.0
+        ysize gui.textbox_height
+        background gui.textbox_background
 
-        background Frame(
-            Solid("#0A0F14AA"),   # fondo oscuro
-            25, 25
-        )
-
-        padding (30, 25)
-
-        vbox:
-            spacing 10
-
-            if who:
+        if who:
+            text who:
                 id "who"
-                text who:
-                    color "#00F5FF"
-                    size 30
+                xpos 200      
+                ypos 40       
+                font gui.name_text_font
+                size gui.name_text_size
+                color gui.accent_color
+                outlines [(2, "#000", 0, 0)] 
 
-            text what:
-                id "what"
-                color "#E8F8FF"
-                size 24
-                xsize 1100
-                xpos 0
+        text what:
+            id "what"
+            xpos 200          
+            ypos 100          
+            xsize 1520        # <--- CAMBIADO de 'width' a 'xsize'
+            font gui.text_font
+            size gui.text_size
+            line_spacing 5
+            outlines [(2, "#000", 0, 0)]
+
+
+
 
 
     ## If there's a side image, display it above the text. Do not display on the
