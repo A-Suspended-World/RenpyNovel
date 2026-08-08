@@ -1,5 +1,7 @@
 define narrator = Character(None)
 
+##PERSONAJES PRINCIPALES
+
 define y = Character("Yuu")
 
 define k = Character("Kuki")
@@ -16,8 +18,13 @@ define s = Character("Sis")
 
 define m = Character("Max")
 
+
+###EXTRAS
+
 define d = Character("Desconocido")
 
 define e = Character("Estudiante")
 
-define c = Character("Chica Misteriosa")
+define cm = Character("Chica Misteriosa")
+
+define ccc = Character("Chica con coletas")

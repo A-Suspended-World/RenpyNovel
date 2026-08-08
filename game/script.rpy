@@ -3,7 +3,7 @@
 
 label start:
 
-    jump chapter_01
+    jump part_03
 
 
 

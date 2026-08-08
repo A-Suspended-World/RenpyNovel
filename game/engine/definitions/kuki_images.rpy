@@ -5,15 +5,6 @@
 
 # FULL BODY
 
-image kuki_idle = "images/characters/kuki/full_body/kuki_idle.png"
-
-image kuki_smile = "images/characters/kuki/full_body/kuki_smile.png"
-
-image kuki_sad = "images/characters/kuki/full_body/kuki_sad.png"
-
-image kuki_angry = "images/characters/kuki/full_body/kuki_angry.png"
-
-
 
 # HALF BODY
 
@@ -27,7 +18,7 @@ image kuki_badend_v2 = "assets/characters/kuki/full/kuki_badend_v2.png"
 # --- BORING ---
 image kuki_boring = "assets/characters/kuki/full/kuki_boring.png"
 image kuki_boring_eye_c = "assets/characters/kuki/full/kuki_boring_eye_c.png"
-image kuki_boring_r = "assets/characters/kuki/full/kuki_boring_R.png"
+image kuki_boring_R = "assets/characters/kuki/full/kuki_boring_R.png"
 
 # --- CONFUSED ---
 image kuki_confused = "assets/characters/kuki/full/kuki_confused.png"
