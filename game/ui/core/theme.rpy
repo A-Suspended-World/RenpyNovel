@@ -4,7 +4,7 @@
 
 ## These aliases keep asset changes out of layout code. The current background
 ## is a temporary visual target and can be replaced without touching screens.
-define menu_ui_main_background = "assets/ui/menu/backgrounds/main_menu_concept.png"
+define menu_ui_main_background = "assets/ui/menu/backgrounds/main_menu_background.png"
 define menu_ui_main_overlay = None
 define menu_ui_preferences_background = "assets/ui/menu/backgrounds/preferences_concept.png"
 define menu_ui_game_background = gui.game_menu_background

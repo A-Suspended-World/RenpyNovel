@@ -28,9 +28,9 @@ prefixed with `legacy_` and serve only as a migration reference.
 
 ## Current visual prototype
 
-The main menu currently uses a supplied concept image as temporary background
-art. Interactive buttons, typography, colors, sounds, and layout remain
-separate from that image so production artwork can replace it later.
+The main menu uses a clean supplied background. Interactive buttons,
+typography, colors, sounds, and layout remain separate from that image so each
+part can evolve independently.
 
 Cinzel is used for the primary menu labels. The font is distributed under the
 SIL Open Font License; its license is stored next to the font file.
