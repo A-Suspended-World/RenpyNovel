@@ -14,21 +14,33 @@ screen navigation():
 screen menu_ui_main_navigation():
 
     vbox:
-        style "menu_ui_navigation"
-        style_prefix "menu_ui_navigation"
+        style "menu_ui_main_navigation"
         at menu_ui_slide_in
 
-        textbutton _("Start") action Start()
-        textbutton _("Load") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Extras") action ShowMenu("extras")
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-            textbutton _("Help") action ShowMenu("help")
+        use menu_ui_main_button(_("NEW GAME"), _("BEGIN THE STORY"), Start())
+        use menu_ui_main_button(_("LOAD GAME"), _("CONTINUE YOUR JOURNEY"), ShowMenu("load"))
+        use menu_ui_main_button(_("SETTINGS"), _("CONFIGURE EXPERIENCE"), ShowMenu("preferences"))
+        use menu_ui_main_button(_("GALLERY"), _("UNLOCKED MEMORIES"), ShowMenu("gallery"))
+        use menu_ui_main_button(_("EXTRAS"), _("ADDITIONAL CONTENT"), ShowMenu("extras"))
 
         if renpy.variant("pc"):
-            textbutton _("Quit") action Quit(confirm=False)
+            use menu_ui_main_button(_("EXIT"), _("CLOSE APPLICATION"), Quit(confirm=False))
+
+
+screen menu_ui_main_button(label, subtitle, action):
+
+    button:
+        style "menu_ui_main_button"
+        action action
+
+        vbox:
+            style "menu_ui_main_button_content"
+
+            text label:
+                style "menu_ui_main_button_label"
+
+            text subtitle:
+                style "menu_ui_main_button_subtitle"
 
 
 screen menu_ui_game_navigation():

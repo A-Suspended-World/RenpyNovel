@@ -4,10 +4,12 @@
 
 screen menu_ui_background(background, overlay=None):
 
-    add background
+    add background:
+        xysize (config.screen_width, config.screen_height)
 
     if overlay:
-        add overlay
+        add overlay:
+            xysize (config.screen_width, config.screen_height)
 
 
 screen menu_ui_empty_state(title, description=menu_ui_placeholder_text):

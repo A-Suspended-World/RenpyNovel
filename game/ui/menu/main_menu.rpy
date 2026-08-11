@@ -9,7 +9,7 @@ screen main_menu():
     use menu_ui_background(menu_ui_main_background, menu_ui_main_overlay)
     use menu_ui_main_navigation
 
-    if gui.show_name:
+    if gui.show_name and menu_ui_show_dynamic_title:
 
         vbox:
             style "menu_ui_main_title_box"

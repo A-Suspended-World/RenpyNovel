@@ -25,3 +25,12 @@ prefixed with `legacy_` and serve only as a migration reference.
    layouts remain adaptable.
 6. Add external code to `game/libs/` only when native Ren'Py features are not
    sufficient, and document its license and version.
+
+## Current visual prototype
+
+The main menu currently uses a supplied concept image as temporary background
+art. Interactive buttons, typography, colors, sounds, and layout remain
+separate from that image so production artwork can replace it later.
+
+Cinzel is used for the primary menu labels. The font is distributed under the
+SIL Open Font License; its license is stored next to the font file.

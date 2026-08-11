@@ -19,6 +19,57 @@ style menu_ui_navigation_button_text:
     properties gui.text_properties("navigation_button")
 
 
+style menu_ui_main_navigation is vbox
+style menu_ui_main_button is button
+style menu_ui_main_button_content is vbox
+style menu_ui_main_button_label is text
+style menu_ui_main_button_subtitle is text
+
+style menu_ui_main_navigation:
+    xalign 0.5
+    ypos 356
+    spacing 14
+
+style menu_ui_main_button:
+    xsize 360
+    ysize 82
+    xpadding 20
+    ypadding 7
+    background menu_ui_main_button_idle
+    hover_background menu_ui_main_button_hover
+    selected_background menu_ui_main_button_hover
+    insensitive_background menu_ui_main_button_idle
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style menu_ui_main_button_content:
+    xfill True
+    yfill True
+    xalign 0.5
+    yalign 0.5
+    spacing 1
+
+style menu_ui_main_button_label:
+    font menu_ui_main_font
+    size 29
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    insensitive_color gui.insensitive_color
+    kerning 2.0
+    xalign 0.5
+    textalign 0.5
+
+style menu_ui_main_button_subtitle:
+    font gui.interface_text_font
+    size 11
+    color menu_ui_main_button_subtitle_color
+    hover_color menu_ui_main_button_hover_color
+    insensitive_color gui.insensitive_color
+    kerning 1.0
+    xalign 0.5
+    textalign 0.5
+
+
 style menu_ui_main_title_box is vbox
 style menu_ui_main_text is gui_text
 style menu_ui_main_title is menu_ui_main_text
@@ -122,3 +173,17 @@ style menu_ui_game_content_frame:
 style menu_ui_game_viewport:
     variant "small"
     xsize 1305
+
+style menu_ui_main_navigation:
+    variant "small"
+    ypos 300
+    spacing 10
+
+style menu_ui_main_button:
+    variant "small"
+    xsize 420
+    ysize 86
+
+style menu_ui_main_button_label:
+    variant "small"
+    size 32
