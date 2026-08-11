@@ -287,7 +287,9 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
-screen navigation():
+## Kept as a reference to Ren'Py's generated layout. The active navigation
+## lives in ui/menu/navigation.rpy.
+screen legacy_navigation():
 
     vbox:
         style_prefix "navigation"
@@ -350,7 +352,9 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-screen main_menu():
+## Kept as a reference while the modular UI evolves. The active main_menu
+## screen lives in ui/menu/main_menu.rpy.
+screen legacy_main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
@@ -415,7 +419,9 @@ style main_menu_version:
 ## This screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
 
-screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+## Kept as a reference to the generated shell. The active game_menu screen
+## lives in ui/menu/game_menu.rpy.
+screen legacy_game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
 
