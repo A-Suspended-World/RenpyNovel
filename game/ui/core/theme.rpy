@@ -6,6 +6,7 @@
 ## is a temporary visual target and can be replaced without touching screens.
 define menu_ui_main_background = "assets/ui/menu/backgrounds/main_menu_concept.png"
 define menu_ui_main_overlay = None
+define menu_ui_preferences_background = "assets/ui/menu/backgrounds/preferences_concept.png"
 define menu_ui_game_background = gui.game_menu_background
 define menu_ui_game_overlay = "gui/overlay/game_menu.png"
 
@@ -16,6 +17,8 @@ define menu_ui_main_button_hover = "assets/ui/menu/buttons/main_button_hover.svg
 define menu_ui_main_button_text_color = "#172b59"
 define menu_ui_main_button_hover_color = "#07183b"
 define menu_ui_main_button_subtitle_color = "#44577c"
+define menu_ui_panel_background = Frame("assets/ui/menu/panels/crystal_panel.svg", 28, 28)
+define menu_ui_row_background = Frame("assets/ui/menu/panels/crystal_row.svg", 24, 24)
 
 ## The concept background already includes its title treatment. Enable this
 ## after replacing it with separated production artwork.

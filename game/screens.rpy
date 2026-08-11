@@ -736,7 +736,8 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+## The active preferences screen lives in ui/screens/preferences.rpy.
+screen legacy_preferences():
 
     tag menu
 
