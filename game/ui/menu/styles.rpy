@@ -174,6 +174,44 @@ style menu_ui_game_viewport:
     variant "small"
     xsize 1305
 
+
+style menu_ui_game_content_panel is frame
+style menu_ui_game_content_viewport is viewport
+style menu_ui_game_content_grid is vpgrid
+style menu_ui_game_title is text
+
+style menu_ui_game_content_panel:
+    xpos 440
+    ypos 240
+    xsize 1340
+    ysize 760
+    padding (36, 34)
+    background menu_ui_panel_background
+
+style menu_ui_game_content_viewport:
+    xfill True
+    yfill True
+
+style menu_ui_game_content_grid:
+    xfill True
+    yfill True
+
+style menu_ui_game_title:
+    xpos 448
+    ypos 148
+    xmaximum 1200
+    font menu_ui_main_font
+    size 58
+    color menu_ui_main_button_text_color
+    outlines [(1, "#eff6ff", 0, 0)]
+
+style menu_ui_game_vscrollbar is vscrollbar
+
+style menu_ui_game_vscrollbar:
+    xsize 12
+    base_bar Solid("#8fa9c5")
+    thumb Solid("#49a7ff")
+
 style menu_ui_main_navigation:
     variant "small"
     ypos 300
@@ -418,6 +456,323 @@ style menu_ui_preferences_back_button:
 style menu_ui_preferences_back_button_text:
     font menu_ui_main_font
     size 21
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    xalign 0.5
+    yalign 0.5
+    textalign 0.5
+
+
+################################################################################
+## Shared content screens
+################################################################################
+
+style about_label_text:
+    font menu_ui_main_font
+    size 28
+    color menu_ui_main_button_text_color
+
+style about_text:
+    font gui.interface_text_font
+    size 22
+    color menu_ui_main_button_text_color
+
+
+style page_label:
+    xpadding 30
+    ypadding 4
+    background menu_ui_row_background
+
+style page_label_text:
+    font menu_ui_main_font
+    size 22
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+
+style page_button:
+    xsize 48
+    ysize 42
+    background None
+    hover_background Frame(menu_ui_main_button_idle, 18, 18)
+    selected_background Frame(menu_ui_main_button_hover, 18, 18)
+
+style page_button_text:
+    font menu_ui_main_font
+    size 18
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    selected_color menu_ui_main_button_hover_color
+    textalign 0.5
+
+style slot_button:
+    xsize 404
+    ysize 290
+    padding (10, 10)
+    background menu_ui_row_background
+    hover_background Frame(menu_ui_main_button_hover, 24, 24)
+    selected_background Frame(menu_ui_main_button_hover, 24, 24)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style slot_button_text:
+    font gui.interface_text_font
+    size 18
+    color menu_ui_main_button_subtitle_color
+    hover_color menu_ui_main_button_hover_color
+    selected_color menu_ui_main_button_hover_color
+    xalign 0.5
+    textalign 0.5
+
+style slot_time_text:
+    size 16
+
+style slot_name_text:
+    font menu_ui_main_font
+    size 18
+
+
+style history_window:
+    xfill True
+    ysize 190
+    padding (18, 14)
+    background menu_ui_row_background
+
+style history_name:
+    xpos 18
+    ypos 10
+    xanchor 0.0
+    xsize 190
+
+style history_name_text:
+    min_width 190
+    font menu_ui_main_font
+    size 22
+    color "#2869b4"
+    textalign 0.0
+
+style history_text:
+    xpos 225
+    ypos 12
+    xanchor 0.0
+    xsize 970
+    min_width 970
+    font gui.interface_text_font
+    size 22
+    color menu_ui_main_button_text_color
+    textalign 0.0
+
+style history_label_text:
+    font menu_ui_main_font
+    size 25
+    color menu_ui_main_button_text_color
+
+
+style help_button:
+    xmargin 6
+    xpadding 18
+    ypadding 8
+    background Frame(menu_ui_main_button_idle, 18, 18)
+    hover_background Frame(menu_ui_main_button_hover, 18, 18)
+    selected_background Frame(menu_ui_main_button_hover, 18, 18)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style help_button_text:
+    font menu_ui_main_font
+    size 19
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    selected_color menu_ui_main_button_hover_color
+
+style help_label:
+    xsize 310
+    right_padding 24
+
+style help_label_text:
+    font menu_ui_main_font
+    size 20
+    color "#2869b4"
+    xalign 1.0
+    textalign 1.0
+
+style help_text:
+    font gui.interface_text_font
+    size 21
+    color menu_ui_main_button_text_color
+
+
+style menu_ui_feature_button:
+    xfill True
+    ysize 64
+    xpadding 24
+    background Frame(menu_ui_main_button_idle, 24, 24)
+    hover_background Frame(menu_ui_main_button_hover, 24, 24)
+    selected_background Frame(menu_ui_main_button_hover, 24, 24)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style menu_ui_feature_button_text:
+    font menu_ui_main_font
+    size 22
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    selected_color menu_ui_main_button_hover_color
+
+style menu_ui_feature_description:
+    font gui.interface_text_font
+    size 21
+    color menu_ui_main_button_subtitle_color
+
+
+style confirm_frame:
+    xalign 0.5
+    yalign 0.5
+    xsize 760
+    padding (48, 40)
+    background menu_ui_panel_background
+
+style confirm_prompt_text:
+    font menu_ui_main_font
+    size 28
+    color menu_ui_main_button_text_color
+    textalign 0.5
+
+style confirm_button:
+    xsize 230
+    ysize 62
+    background Frame(menu_ui_main_button_idle, 24, 24)
+    hover_background Frame(menu_ui_main_button_hover, 24, 24)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style confirm_button_text:
+    font menu_ui_main_font
+    size 21
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    xalign 0.5
+    textalign 0.5
+
+
+################################################################################
+## Save and load
+################################################################################
+
+style menu_ui_file_slots_root is vbox
+style menu_ui_file_page_label is button
+style menu_ui_file_page_label_text is input
+style menu_ui_file_slot_grid is grid
+style menu_ui_file_slot_button is button
+style menu_ui_file_slot_content is vbox
+style menu_ui_file_slot_preview is fixed
+style menu_ui_file_slot_number is text
+style menu_ui_file_slot_time is text
+style menu_ui_file_slot_name is text
+style menu_ui_file_page_navigation is hbox
+style menu_ui_file_page_button is button
+style menu_ui_file_page_button_text is text
+style menu_ui_file_sync_button is button
+style menu_ui_file_sync_button_text is text
+
+style menu_ui_file_slots_root:
+    xfill True
+    yfill True
+    spacing 10
+
+style menu_ui_file_page_label:
+    xalign 0.5
+    xsize 320
+    ysize 38
+    background menu_ui_row_background
+
+style menu_ui_file_page_label_text:
+    font menu_ui_main_font
+    size 19
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    xalign 0.5
+    textalign 0.5
+
+style menu_ui_file_slot_grid:
+    xalign 0.5
+    spacing 12
+
+style menu_ui_file_slot_button:
+    xsize 390
+    ysize 240
+    padding (8, 8)
+    background menu_ui_row_background
+    hover_background Frame(menu_ui_main_button_hover, 24, 24)
+    selected_background Frame(menu_ui_main_button_hover, 24, 24)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style menu_ui_file_slot_content:
+    xfill True
+    spacing 2
+
+style menu_ui_file_slot_preview:
+    xalign 0.5
+    xsize 350
+    ysize 190
+
+style menu_ui_file_slot_number:
+    xpos 10
+    ypos 8
+    font menu_ui_main_font
+    size 18
+    color "#ffffff"
+    outlines [(1, "#17335f", 0, 0)]
+
+style menu_ui_file_slot_time:
+    xalign 0.5
+    font gui.interface_text_font
+    size 15
+    color menu_ui_main_button_subtitle_color
+    textalign 0.5
+
+style menu_ui_file_slot_name:
+    xalign 0.5
+    font menu_ui_main_font
+    size 15
+    color menu_ui_main_button_text_color
+    textalign 0.5
+
+style menu_ui_file_page_navigation:
+    xalign 0.5
+    spacing 4
+
+style menu_ui_file_page_button:
+    xsize 48
+    ysize 38
+    background None
+    hover_background Frame(menu_ui_main_button_idle, 16, 16)
+    selected_background Frame(menu_ui_main_button_hover, 16, 16)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style menu_ui_file_page_button_text:
+    font menu_ui_main_font
+    size 17
+    color menu_ui_main_button_text_color
+    hover_color menu_ui_main_button_hover_color
+    selected_color menu_ui_main_button_hover_color
+    xalign 0.5
+    yalign 0.5
+    textalign 0.5
+
+style menu_ui_file_sync_button:
+    xalign 0.5
+    xsize 310
+    ysize 42
+    background Frame(menu_ui_main_button_idle, 18, 18)
+    hover_background Frame(menu_ui_main_button_hover, 18, 18)
+    hover_sound menu_ui_hover_sound
+    activate_sound menu_ui_activate_sound
+
+style menu_ui_file_sync_button_text:
+    font menu_ui_main_font
+    size 17
     color menu_ui_main_button_text_color
     hover_color menu_ui_main_button_hover_color
     xalign 0.5

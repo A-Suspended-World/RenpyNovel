@@ -558,7 +558,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("Acerca de"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -571,7 +571,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Creado con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 style about_label is gui_label
@@ -591,21 +591,22 @@ style about_label_text:
 ## https://www.renpy.org/doc/html/screen_special.html#save https://
 ## www.renpy.org/doc/html/screen_special.html#load
 
-screen save():
+## Active save/load screens live in ui/screens/file_slots.rpy.
+screen legacy_save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use legacy_file_slots(_("Save"))
 
 
-screen load():
+screen legacy_load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use legacy_file_slots(_("Load"))
 
 
-screen file_slots(title):
+screen legacy_file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
@@ -904,7 +905,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
+    use game_menu(_("Historial"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
 
         style_prefix "history"
 
@@ -932,7 +933,7 @@ screen history():
                     substitute False
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("El historial de diálogo está vacío.")
 
 
 ## This determines what tags are allowed to be displayed on the history screen.
@@ -991,7 +992,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Ayuda"), scroll="viewport"):
 
         style_prefix "help"
 
@@ -1000,11 +1001,11 @@ screen help():
 
             hbox:
 
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+                textbutton _("Teclado") action SetScreenVariable("device", "keyboard")
+                textbutton _("Ratón") action SetScreenVariable("device", "mouse")
 
                 if GamepadExists():
-                    textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+                    textbutton _("Mando") action SetScreenVariable("device", "gamepad")
 
             if device == "keyboard":
                 use keyboard_help
@@ -1162,7 +1163,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add Solid("#0d234f80")
 
     frame:
 
@@ -1179,8 +1180,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+            textbutton _("Sí") action yes_action
+            textbutton _("No") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action

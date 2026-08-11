@@ -11,21 +11,21 @@ screen extras():
         vbox:
             style "menu_ui_feature_list"
 
-            text _("Optional and unlockable content lives here. Each section is isolated so it can grow without coupling itself to the main menu."):
+            text _("Aquí encontrarás contenido opcional y desbloqueable. Cada sección es independiente para que pueda crecer sin acoplarse al menú principal."):
                 style "menu_ui_feature_description"
 
-            textbutton _("Gallery"):
+            textbutton _("Galería"):
                 style "menu_ui_feature_button"
                 action ShowMenu("gallery")
 
-            textbutton _("Music Room"):
+            textbutton _("Sala de música"):
                 style "menu_ui_feature_button"
                 action ShowMenu("music_room")
 
-            textbutton _("Chapter Selection"):
+            textbutton _("Selección de capítulos"):
                 style "menu_ui_feature_button"
                 action ShowMenu("chapter_select")
 
-            textbutton _("Achievements"):
+            textbutton _("Logros"):
                 style "menu_ui_feature_button"
                 action ShowMenu("achievements")

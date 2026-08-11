@@ -4,62 +4,53 @@
 
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
+    $ active_screen = CurrentScreenName()
     style_prefix "menu_ui_game"
 
-    if main_menu:
-        use menu_ui_background(menu_ui_main_background)
-    else:
-        use menu_ui_background(menu_ui_game_background)
+    use menu_ui_background(menu_ui_main_background)
+    add Solid("#e9f3ff66")
 
     frame:
-        style "menu_ui_game_outer_frame"
+        style "menu_ui_game_content_panel"
 
-        hbox:
+        if scroll == "viewport":
 
-            frame:
-                style "menu_ui_game_navigation_frame"
+            viewport:
+                style "menu_ui_game_content_viewport"
+                yinitial yinitial
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+                side_yfill True
 
-            frame:
-                style "menu_ui_game_content_frame"
-
-                if scroll == "viewport":
-
-                    viewport:
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-                        side_yfill True
-
-                        vbox:
-                            spacing spacing
-                            transclude
-
-                elif scroll == "vpgrid":
-
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-                        side_yfill True
-                        spacing spacing
-                        transclude
-
-                else:
+                vbox:
+                    spacing spacing
                     transclude
 
-    use menu_ui_game_navigation
+        elif scroll == "vpgrid":
 
-    textbutton _("Return"):
-        style "menu_ui_return_button"
-        action Return()
+            vpgrid:
+                style "menu_ui_game_content_grid"
+                cols 1
+                yinitial yinitial
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+                side_yfill True
+                spacing spacing
+                transclude
 
-    label title:
-        style "menu_ui_game_label"
+        else:
+            transclude
+
+    use menu_ui_side_navigation(active_screen)
+
+    text title:
+        style "menu_ui_game_title"
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
+    else:
+        key "game_menu" action Return()

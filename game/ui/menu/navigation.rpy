@@ -70,3 +70,52 @@ screen menu_ui_game_navigation():
 
         if renpy.variant("pc"):
             textbutton _("Quit") action Quit(confirm=not main_menu)
+
+
+################################################################################
+## Shared side navigation
+################################################################################
+
+screen menu_ui_side_navigation(active_screen=None):
+
+    frame:
+        style "menu_ui_preferences_sidebar"
+
+        vbox:
+            style "menu_ui_preferences_sidebar_list"
+
+            use menu_ui_side_nav_button("◷", _("Historial"), ShowMenu("history"), active_screen == "history", not main_menu)
+            use menu_ui_side_nav_button("▣", _("Guardar"), ShowMenu("save"), active_screen == "save", not main_menu)
+            use menu_ui_side_nav_button("□", _("Cargar"), ShowMenu("load"), active_screen == "load")
+            use menu_ui_side_nav_button("⚙", _("Preferencias"), ShowMenu("preferences"), active_screen == "preferences")
+            use menu_ui_side_nav_button("★", _("Extras"), ShowMenu("extras"), active_screen in ("extras", "gallery", "music_room", "chapter_select", "achievements"))
+            use menu_ui_side_nav_button("⌂", _("Menú principal"), ShowMenu("main_menu") if main_menu else MainMenu())
+            use menu_ui_side_nav_button("i", _("Acerca de"), ShowMenu("about"), active_screen == "about")
+
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+                use menu_ui_side_nav_button("?", _("Ayuda"), ShowMenu("help"), active_screen in ("help", "keyboard_help", "mouse_help", "gamepad_help"))
+
+            if renpy.variant("pc"):
+                use menu_ui_side_nav_button("X", _("Salir"), Quit(confirm=not main_menu))
+
+    textbutton _("‹    Volver"):
+        style "menu_ui_preferences_back_button"
+        action Return()
+
+
+screen menu_ui_side_nav_button(icon, label, action, is_selected=False, sensitive=True):
+
+    button:
+        style "menu_ui_preferences_nav_button"
+        action action
+        selected is_selected
+        sensitive sensitive
+
+        hbox:
+            style "menu_ui_preferences_nav_button_content"
+
+            text icon:
+                style "menu_ui_preferences_nav_icon"
+
+            text label:
+                style "menu_ui_preferences_nav_label"

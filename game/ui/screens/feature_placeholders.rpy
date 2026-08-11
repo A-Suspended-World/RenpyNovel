@@ -11,30 +11,30 @@ screen menu_ui_feature_placeholder(title, description=menu_ui_placeholder_text):
 screen gallery():
     tag menu
     use menu_ui_feature_placeholder(
-        _("Gallery"),
-        _("CG illustrations, character art, and unlocked scenes will be presented here."),
+        _("Galería"),
+        _("Aquí se mostrarán ilustraciones, arte de personajes y escenas desbloqueadas."),
     )
 
 
 screen music_room():
     tag menu
     use menu_ui_feature_placeholder(
-        _("Music Room"),
-        _("Unlocked tracks, playback controls, and track information will be presented here."),
+        _("Sala de música"),
+        _("Aquí se mostrarán las pistas desbloqueadas, sus controles y su información."),
     )
 
 
 screen chapter_select():
     tag menu
     use menu_ui_feature_placeholder(
-        _("Chapter Selection"),
-        _("Available chapters, completion state, and safe starting points will be presented here."),
+        _("Selección de capítulos"),
+        _("Aquí se mostrarán los capítulos disponibles, su progreso y los puntos de inicio seguros."),
     )
 
 
 screen achievements():
     tag menu
     use menu_ui_feature_placeholder(
-        _("Achievements"),
-        _("Progress, unlocked milestones, and hidden objectives will be presented here."),
+        _("Logros"),
+        _("Aquí se mostrarán el progreso, los hitos desbloqueados y los objetivos ocultos."),
     )

@@ -13,7 +13,7 @@ screen preferences():
     $ voice_volume_label = "{}".format(int(preferences.get_volume("voice") * 100))
 
     use menu_ui_background(menu_ui_preferences_background)
-    use menu_ui_preferences_sidebar
+    use menu_ui_side_navigation("preferences")
 
     frame:
         style "menu_ui_preferences_content_panel"
@@ -137,48 +137,3 @@ screen menu_ui_preferences_slider(label, value_label, preference_value, icon):
                 bar:
                     style "menu_ui_preferences_slider"
                     value preference_value
-
-
-screen menu_ui_preferences_sidebar():
-
-    frame:
-        style "menu_ui_preferences_sidebar"
-
-        vbox:
-            style "menu_ui_preferences_sidebar_list"
-
-            use menu_ui_preferences_nav_button("◷", _("Historial"), ShowMenu("history"), sensitive=not main_menu)
-            use menu_ui_preferences_nav_button("▣", _("Guardar"), ShowMenu("save"), sensitive=not main_menu)
-            use menu_ui_preferences_nav_button("□", _("Cargar"), ShowMenu("load"))
-            use menu_ui_preferences_nav_button("⚙", _("Preferencias"), NullAction(), is_selected=True)
-            use menu_ui_preferences_nav_button("★", _("Extras"), ShowMenu("extras"))
-            use menu_ui_preferences_nav_button("⌂", _("Menú principal"), ShowMenu("main_menu") if main_menu else MainMenu())
-            use menu_ui_preferences_nav_button("i", _("Acerca de"), ShowMenu("about"))
-
-            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-                use menu_ui_preferences_nav_button("?", _("Ayuda"), ShowMenu("help"))
-
-            if renpy.variant("pc"):
-                use menu_ui_preferences_nav_button("X", _("Salir"), Quit(confirm=not main_menu))
-
-    textbutton _("‹    Volver"):
-        style "menu_ui_preferences_back_button"
-        action Return()
-
-
-screen menu_ui_preferences_nav_button(icon, label, action, is_selected=False, sensitive=True):
-
-    button:
-        style "menu_ui_preferences_nav_button"
-        action action
-        selected is_selected
-        sensitive sensitive
-
-        hbox:
-            style "menu_ui_preferences_nav_button_content"
-
-            text icon:
-                style "menu_ui_preferences_nav_icon"
-
-            text label:
-                style "menu_ui_preferences_nav_label"
