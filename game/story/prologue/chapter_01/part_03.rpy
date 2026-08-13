@@ -454,14 +454,14 @@ $ escena.show(
 )
 
 $ escena.show(
-    "kuki_thinking_looking_right",
+    "kuki_idle_HB",
     POS_CEN,
     PLANO_CERCANO,
     transition=dissolve
 )
 
 $ escena.hide("kuki_boring", transition = dissolve)
-$ escena.hide("kuki_thinking_looking_right", transition = dissolve)
+$ escena.hide("kuki_idle_HB", transition = dissolve)
 
 
 "Ella lo entendio de inmediato"

@@ -6,11 +6,6 @@
 # FULL BODY
 
 
-# HALF BODY
-
-# Declaración de imágenes para Kuki
-# Ruta raíz: assets/characters/kuki/full/
-
 # --- BADEND ---
 image kuki_badend = "assets/characters/kuki/full/kuki_badend.png"
 image kuki_badend_v2 = "assets/characters/kuki/full/kuki_badend_v2.png"
@@ -76,8 +71,12 @@ image kuki_thinking_looking_right = "assets/characters/kuki/full/kuki_thinking_l
 
 # CLOSE UP
 
-image kuki_close_sad = "images/characters/kuki/close_up/kuki_close_sad.png"
+# HALF BODY
 
+image kuki_idle_HB = "assets/characters/kuki/half/kuki_idle_half.png"
+
+# Declaración de imágenes para Kuki
+# Ruta raíz: assets/characters/kuki/full/
 
 
 # BLINK
