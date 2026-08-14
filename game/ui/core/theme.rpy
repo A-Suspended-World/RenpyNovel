@@ -32,4 +32,4 @@ define menu_ui_activate_sound = "assets/audio/ui/UI Sci-Fi Confirm.wav"
 define menu_ui_main_music = None
 
 ## Shared copy for scaffolded sections.
-define menu_ui_placeholder_text = _("This section is ready for its future content and visual design.")
+define menu_ui_placeholder_text = _("Esta sección está lista para su contenido y diseño visual futuros.")

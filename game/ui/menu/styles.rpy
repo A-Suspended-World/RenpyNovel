@@ -258,10 +258,10 @@ style menu_ui_preferences_content:
 style menu_ui_preferences_toggle_groups:
     xfill True
     ysize 190
-    spacing 28
+    spacing 20
 
 style menu_ui_preferences_group:
-    xsize 620
+    xsize 402
     spacing 4
 
 style menu_ui_preferences_group_label:

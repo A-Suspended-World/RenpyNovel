@@ -56,6 +56,20 @@ screen preferences():
                         style "menu_ui_preferences_check_button"
                         action InvertSelected(Preference("transitions", "toggle"))
 
+                vbox:
+                    style "menu_ui_preferences_group"
+
+                    label _("Idioma"):
+                        style "menu_ui_preferences_group_label"
+
+                    textbutton _("Español"):
+                        style "menu_ui_preferences_radio_button"
+                        action Language(None)
+
+                    textbutton _("English"):
+                        style "menu_ui_preferences_radio_button"
+                        action Language("english")
+
             hbox:
                 style "menu_ui_preferences_slider_columns"
 
