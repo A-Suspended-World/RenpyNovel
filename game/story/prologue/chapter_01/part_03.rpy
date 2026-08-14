@@ -33,6 +33,7 @@ $ escena.show(
     "alice_formal_idle",
     POS_CEN,
     PLANO_CERCANO,
+    entrar_caminando,
     transition=dissolve
 )
 
