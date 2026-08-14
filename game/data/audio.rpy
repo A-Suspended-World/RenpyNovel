@@ -58,6 +58,8 @@ define SFX_DOOR_OPEN = "assets/audio/sfx/doors/open.ogg"
 
 define SFX_STEP = "assets/audio/sfx/footsteps/concrete.ogg"
 
+define SFX_DOOR = "assets/audio/sfx/door/door_open.wav"
+
 
 ##############################################################################
 # TRANSITION

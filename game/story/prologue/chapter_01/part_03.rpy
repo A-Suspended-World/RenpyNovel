@@ -19,34 +19,45 @@ play music BGM_OPENING
 
 prof "Adelante, alumno."
 
-"Desde el otro lado de la puerta, alguien me invito a pasar"
+"Desde el otro lado de la puerta, escuche una voz"
+
+"La cual me invitaba a pasar"
+
+"..."
 
 "¿Acaso puede ver atravez de las paredes?"
 
-"Al acercarme a la entrada, esta se abrio de inmediato"
+"No me quedaba de otra...."
+
+"Al acercarme un poco mas a la entrada"
+
+"Esta se deslizo hacia un lado"
+
+play sound SFX_DOOR
+
+"..."
 
 scene bg classroom with dissolve
 
-play sound "door_open.ogg"
+"Una vez dentro"
+
+"Habia una mujer para al lado de la pizarra"
+
 
 $ escena.show(
     "alice_formal_idle",
     POS_CEN,
     PLANO_CERCANO,
-    entrar_caminando,
-    transition=dissolve
+    rebote,
+    transition = dissolve
 )
-
-
-"Alli estaba ella, La Maestra......"
 
 $ escena.hide("alice_formal_idle")
 
 $ escena.show(
     "alice_formal_thinking",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
 
 prof "Vuelve a llegar tarde, alumno."
@@ -56,24 +67,21 @@ $ escena.hide("alice_formal_thinking")
 $ escena.show(
     "alice_formal_idle",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
 
-"Una mujer de cabello azul y una mirada penetrante."
+"Era una mujer de cabello azul oscuro y con una mirada penetrante."
 
-"Su mirada era tan fría que sentí un escalofrío recorrerme la espalda."
+"Aterradora...."
 
+y "No tengo excusa por haber llagado tarde....."
 
-y "..."
-
-"No tenía ninguna excusa que pudiera sonar convincente."
+y "Disculpeme"
 
 $ escena.show(
     "alice_formal_R",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
 
 "La profesora desvió ligeramente la mirada hacia los asientos."
@@ -83,8 +91,7 @@ $ escena.hide("alice_formal_R")
 $ escena.show(
     "alice_formal_idle",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
 
 "No hacía falta decir nada más."
@@ -118,13 +125,13 @@ $ escena.hide("alice_formal_idle",transition=dissolve)
 
 stop music
 
-
-
-scene bg kuki_escena01  # <--- Corregido (kuki en lugar de kukuki)
+scene bg kuki_escena01 
 with dissolve
 
+"..."
 
-"Alli habia una chica sonriente, mientras me miraba con una cara algo curiosa...."
+
+"aquí vamos de nuevo..."
 
 scene bg classroom
 
@@ -145,8 +152,9 @@ $ escena.show(
     "kuki_idle",
     POS_CEN,
     PLANO_CERCANO,
-    transition=dissolve
+    brinco
 )
+
 
 "Uhg... tenia que ser ella"
 
@@ -158,8 +166,7 @@ $ escena.show(
 $ escena.show(
     "kuki_boring",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
 
 $ escena.hide("kuki_idle"
@@ -168,6 +175,10 @@ $ escena.hide("kuki_idle"
 
 
 ccc "¿Así que no me lo vas a contar?"
+
+
+
+ccc "Aburrido"
 
 $ escena.hide("kuki_boring",
 transition=dissolve)
@@ -180,49 +191,45 @@ transition=dissolve)
 
 "Senti nuevamente algo tocandome la espalda."
 
-"volvi a mirara hacia atras"
+"Volví a mirar hacia atrás."
 
 $ escena.show(
     "kuki_smile",
     POS_CEN,
     PLANO_CERCANO,
-    negar,
-    transition=dissolve
+    negar
 )
-
 
 ccc "PUM PUM"
 
+
 "..."
 
-
-
+$ escena.hide("kuki_smile")
 
 $ escena.show(
     "kuki_smile",
     POS_CEN,
     PLANO_CERCANO,
-    negar,
-    transition=dissolve
+    negar
 )
 
 "Y otro."
-$ escena.hide("kuki_smile", transition = dissolve)
+
 
 "Cada vez eran más insistentes."
+
+$ escena.hide("kuki_smile")
 
 $ escena.show(
     "kuki_smile_eyes_closed",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
-
-$ escena.hide("kuki_smile", transition = dissolve)
 
 ccc "¿Todavía no vas a hablar?"
 
-$ escena.hide("kuki_smile_eyes_closed", transition = dissolve)
+$ escena.hide("kuki_smile_eyes_closed", transition=dissolve)
 
 "Decidí nuevamente usar: ignorar por el resto de la clase."
 
@@ -231,6 +238,8 @@ $ escena.hide("kuki_smile_eyes_closed", transition = dissolve)
 "Después de todo..."
 
 "Nadie me creeria si les dijera que......"
+
+camera at sacudida
 
 "¡¡¡¡AHHHHHH!!!!"
 
@@ -246,13 +255,26 @@ $ escena.show(
     "kuki_grin_looking_right",
     POS_CEN,
     PLANO_CERCANO,
-    transition=dissolve
+    brinco
 )
-$ escena.hide("kuki_smile_eyes_closed"
+ccc "Ah... jejeje."
+$ escena.show(
+    "kuki_smile",
+    POS_CEN,
+    PLANO_CERCANO,
+    brinco
+)
+$ escena.hide("kuki_grin_looking_right"
+)
+
+ccc "Se me paso la mano."
+
+
+
+$ escena.hide("kuki_smile"
 )
 
 
-ccc "Ah... Creo que me pase."
 
 $ escena.hide("kuki_grin_looking_right", transition = dissolve
 )
@@ -263,7 +285,7 @@ $ escena.hide("kuki_grin_looking_right", transition = dissolve
 
 
 
-"Todos el salon me estaba mirando."
+"Todos el salon giraba a verme."
 
 "Eso significa que...."
 
@@ -274,49 +296,62 @@ $ escena.show(
     transition=dissolve
 )
 
-prof "¿Pasa algo alumno?"
+prof "¿Pasa algo...?"
 
 $ escena.hide("alice_formal_thinking", transition = dissolve
 )
 
 "Esto era lo peor que podia pasarme"
 
+"Tenia que explicarle lo que habia ocurrido"
+
+"Y rapido"
+
 "No.. yo solo estaba sentado y ella....."
 
-"No podia dejar de tartamudear"
+"Pero no podia dejar de tartamudear"
 
 "Mire en la direccion del problema"
 
 $ escena.show(
     "kuki_looking_open_mouth",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
-$ escena.hide("kuki_smile_eyes_closed"
+"¡AHHHHH!."
+
+"¡¡fingiendo prestar atencion a la clase!!."
+$ escena.hide("kuki_looking_open_mouth"
 )
 
-"¡AHhhhh!, fingiendo prestar atencion a la clase."
+$ escena.show(
+    "kuki_fake_smile",
+    POS_CEN,
+    PLANO_CERCANO,
+    temblor_leve
+)
 
 "Despues de todo lo que hiciste..."
 
-"¡¡Para de finjir!!"
-
-$ escena.hide("kuki_looking_open_mouth", transition = dissolve
+$ escena.hide("kuki_fake_smile"
 )
+
+
+
+"¡¡Para de finjir!!"
 
 $ escena.show(
     "alice_formal_serious ",
     POS_CEN,
     PLANO_CERCANO,
-    transition=dissolve
+    brinco
 )
 
 prof "Silencio"
 
 "...."
 
-$ escena.hide("alice_formal_serious", transition = dissolve
+$ escena.hide("alice_formal_serious"
 )
 
 $ escena.show("alice_formal_thinking ",
@@ -327,9 +362,11 @@ $ escena.show("alice_formal_thinking ",
 
 "¿Podria hacerme el favor de no interrumpir la clase?"
 
-"...Si...No lo hare mas...."
+"...Si, No lo volvere a hacer"
 
-$ escena.hide("alice_formal_thinking", transition = dissolve
+#agregar aqui a alice forma parpadeando
+
+$ escena.hide("alice_formal_thinking"
 )
 
 $ escena.show(
@@ -338,6 +375,8 @@ $ escena.show(
     PLANO_CERCANO,
     transition=dissolve
 )
+
+prof "Perfecto"
 
 "Entonces, donde nos habiamos quedado...."
 
@@ -365,8 +404,7 @@ $ escena.show(
 $ escena.show(
     "kuki_boring",
     POS_CEN,
-    PLANO_CERCANO,
-    transition=dissolve
+    PLANO_CERCANO
 )
 $ escena.hide("kuki_boring_R"
 )
@@ -379,7 +417,7 @@ $ escena.show(
     "kuki_smile_eyes_closed",
     POS_CEN,
     PLANO_CERCANO,
-    transition=dissolve
+    brinco
 )
 
 $ escena.hide("kuki_boring"
@@ -758,13 +796,15 @@ $ escena.show(
     "kuki_teasing",
     POS_CEN,
     PLANO_CERCANO,
-    transition = dissolve)
+    brinco)
 
 ccc "..."
 
 "Gane esta vez" 
 
-"eso es lo que me decia con la mirada"
+"Aun que no lo dijo"
+
+"Eso es lo que se veia en su mirada"
 
 $ escena.hide("kuki_teasing", transition = dissolve)
 
