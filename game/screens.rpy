@@ -95,7 +95,8 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
-screen say(who, what):
+## Kept as a reference. The active say screen lives in ui/dialogue/dialogue.rpy.
+screen legacy_say(who, what):
 
     window:
         id "window"
@@ -235,7 +236,9 @@ style choice_button_text is default:
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
 
-screen quick_menu():
+## Kept as a reference. The active quick menu lives in
+## ui/dialogue/quick_menu.rpy.
+screen legacy_quick_menu():
 
     ## Ensure this appears on top of other screens.
     zorder 100
@@ -1527,7 +1530,7 @@ style pref_vbox:
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
-screen quick_menu():
+screen legacy_quick_menu():
     variant "touch"
 
     zorder 100
