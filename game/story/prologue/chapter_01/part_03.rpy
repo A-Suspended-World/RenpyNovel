@@ -583,95 +583,98 @@ ccc"..."
 
 ccc "Entiendo...."
 
-"Hace aproximadamente tres mil años, una pequeña nación declaró la guerra al resto del mundo."
 
-"A simple vista no parecía una amenaza. Su territorio era reducido, su población escasa. "
+# "Hace aproximadamente tres mil años, una pequeña nación declaró la guerra al resto del mundo."
 
-"Sin embargo, poseían algo desafiaba todo lo que la humanidad conocía."
+# "A simple vista no parecía una amenaza. Su territorio era reducido, su población escasa. "
 
-"Rodeando su país se alzaba una inmensa barrera de energía. Ninguna arma conocida podía atravesarla."
+# "Sin embargo, poseían algo desafiaba todo lo que la humanidad conocía."
 
-"Balas, misiles, proyectiles e incluso los armamentos más avanzados eran repelidos y devueltos a sus atacantes."
+# "Rodeando su país se alzaba una inmensa barrera de energía. Ninguna arma conocida podía atravesarla."
 
-"Era un domo impenetrable."
+# "Balas, misiles, proyectiles e incluso los armamentos más avanzados eran repelidos y devueltos a sus atacantes."
 
-"Con semejante poder en sus manos, aquella nación lanzó un ultimátum al mundo."
+# "Era un domo impenetrable."
 
-"Todos debían someterse a su autoridad."
+# "Con semejante poder en sus manos, aquella nación lanzó un ultimátum al mundo."
 
-"Quienes se negaran serían eliminados."
+# "Todos debían someterse a su autoridad."
 
-"Las guerras que siguieron dejaron cicatrices imborrables."
+# "Quienes se negaran serían eliminados."
 
-"Millones de vidas se perdieron en intentos desesperados por derribar una defensa imposible de vulnerar."
+# "Las guerras que siguieron dejaron cicatrices imborrables."
 
-"Con el paso de los meses, una dolorosa verdad se hizo evidente: la humanidad no podía ganar."
+# "Millones de vidas se perdieron en intentos desesperados por derribar una defensa imposible de vulnerar."
 
-"La derrota parecía inevitable."
+# "Con el paso de los meses, una dolorosa verdad se hizo evidente: la humanidad no podía ganar."
 
-"Entonces apareció una esperanza."
+# "La derrota parecía inevitable."
 
-"Un grupo de científicos"
+# "Entonces apareció una esperanza."
 
-"liderado por una brillante investigadora cuyas contribuciones ya habían transformado innumerables campos de estudio"
+# "Un grupo de científicos"
 
-"logró descubrir una posible debilidad en la barrera. Era una oportunidad única. Quizá la última."
+# "liderado por una brillante investigadora cuyas contribuciones ya habían transformado innumerables campos de estudio"
 
-"Pero el tiempo se estaba agotando."
+# "logró descubrir una posible debilidad en la barrera. Era una oportunidad única. Quizá la última."
 
-"Cada día que pasaba acercaba al mundo a la extinción."
+# "Pero el tiempo se estaba agotando."
 
-"Comprendiendo la gravedad de la situación, el equipo tomó una decisión de la que no habría regreso. Si querían salvar a la humanidad, tendrían que actuar de inmediato."
+# "Cada día que pasaba acercaba al mundo a la extinción."
 
-"Partieron hacia el territorio enemigo llevando consigo la única herramienta capaz de poner fin a la amenaza."
+# "Comprendiendo la gravedad de la situación, el equipo tomó una decisión de la que no habría regreso. Si querían salvar a la humanidad, tendrían que actuar de inmediato."
 
-"Contra todo pronóstico, lograron atravesar la barrera."
+# "Partieron hacia el territorio enemigo llevando consigo la única herramienta capaz de poner fin a la amenaza."
 
-"Pero fueron detectados."
+# "Contra todo pronóstico, lograron atravesar la barrera."
 
-"Antes de que pudieran alcanzar su objetivo"
+# "Pero fueron detectados."
 
-"las defensas enemigas desplegaron un gigantesco campo de fuerza alrededor de su aeronave. "
+# "Antes de que pudieran alcanzar su objetivo"
 
-"Desde el otro lado, los gobernantes de aquella nación anunciaron que ellos serían los primeros testigos del destino reservado para quienes se opusieran a su dominio."
+# "las defensas enemigas desplegaron un gigantesco campo de fuerza alrededor de su aeronave. "
 
-"Atrapados."
+# "Desde el otro lado, los gobernantes de aquella nación anunciaron que ellos serían los primeros testigos del destino reservado para quienes se opusieran a su dominio."
 
-"Sin posibilidad de escapar."
+# "Atrapados."
 
-"Sin tiempo para intentar otra estrategia."
+# "Sin posibilidad de escapar."
 
-"Los científicos tomaron la decisión más difícil."
+# "Sin tiempo para intentar otra estrategia."
 
-"su ultima carta"
+# "Los científicos tomaron la decisión más difícil."
 
-"Activaron una bomba que train con ellos."
+# "su ultima carta"
 
-"La explosión fue tan colosal que muchos creyeron que borraría del mapa una parte del planeta."
+# "Activaron una bomba que train con ellos."
 
-"Sin embargo, la barrera contuvo toda la energía liberada."
+# "La explosión fue tan colosal que muchos creyeron que borraría del mapa una parte del planeta."
 
-"Cuando la luz finalmente se desvaneció, solo quedó un inmenso vacío esférico en el lugar donde antes existía aquella nación."
+# "Sin embargo, la barrera contuvo toda la energía liberada."
 
-"No quedaron ciudades."
+# "Cuando la luz finalmente se desvaneció, solo quedó un inmenso vacío esférico en el lugar donde antes existía aquella nación."
 
-"No quedaron edificios."
+# "No quedaron ciudades."
 
-"No quedó absolutamente nada."
+# "No quedaron edificios."
 
-"Así fue como aquel grupo de científicos entregó sus vidas para salvar al mundo."
+# "No quedó absolutamente nada."
 
-"Miles de años después, sus nombres siguen siendo recordados como los de los mayores héroes de la historia."
+# "Así fue como aquel grupo de científicos entregó sus vidas para salvar al mundo."
 
-"Fueron los salvadores de la humanidad, los pioneros de la civilización moderna y el símbolo de que incluso frente a una derrota segura"
+# "Miles de años después, sus nombres siguen siendo recordados como los de los mayores héroes de la historia."
 
-"En honor a su legado"
+# "Fueron los salvadores de la humanidad, los pioneros de la civilización moderna y el símbolo de que incluso frente a una derrota segura"
 
-"la humanidad dedicó los siglos siguientes a aquello por lo que ellos lucharon: la búsqueda incansable del conocimiento."
+# "En honor a su legado"
 
-"Y hasta el día de hoy, seguimos avanzando, desarrollando nuevas tecnologías y explorando los límites de lo posible"
+# "la humanidad dedicó los siglos siguientes a aquello por lo que ellos lucharon: la búsqueda incansable del conocimiento."
 
-"guiados por el mismo espíritu que permitió a nuestros salvadores cambiar el destino del mundo."
+# "Y hasta el día de hoy, seguimos avanzando, desarrollando nuevas tecnologías y explorando los límites de lo posible"
+
+# "guiados por el mismo espíritu que permitió a nuestros salvadores cambiar el destino del mundo."
+
+"Pasaron unos minutos"
 
 k"Este seria el resumen de la clase Maestra."
 
