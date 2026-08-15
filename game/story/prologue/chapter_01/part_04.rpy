@@ -2,7 +2,7 @@
 
 label part_04:
 
-    "Esta es la parte 4"
+    play music AMB_RESET
 
     scene bg aisle with dissolve
 

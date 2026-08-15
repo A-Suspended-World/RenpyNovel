@@ -572,6 +572,7 @@ $ escena.show(
 
 "De seguro otra vez no estubistes prestando atencion"
 
+$ escena.hide("kuki_embarrassed_open_mouth")
 
 $ escena.show(
     "kuki_embarrassed_looking_right",
@@ -620,7 +621,22 @@ prof "No tendraas problemas para mencionar algo de lo que vimos en clase"
 
 ccc"..."
 
+$ escena.hide("kuki_embarrassed_open_mouth")
+
+$ escena.show(
+    "kuki_boring",
+    POS_DER,
+    PLANO_CERCANO
+)
 ccc "Entiendo...."
+
+$ escena.hide("alice_formal_thinking", transition = dissolve)
+
+$ escena.hide("kuki_boring", transition = dissolve)
+
+
+
+
 
 
 # "Hace aproximadamente tres mil años, una pequeña nación declaró la guerra al resto del mundo."
@@ -713,15 +729,34 @@ ccc "Entiendo...."
 
 # "guiados por el mismo espíritu que permitió a nuestros salvadores cambiar el destino del mundo."
 
+$ escena.hide("kuki_boring")
+
 "Pasaron unos minutos"
 
-k"Este seria el resumen de la clase Maestra."
+$ escena.show(
+    "alice_formal_idle",
+    POS_IZQ,
+    PLANO_CERCANO,
+    transition = dissolve)
+
+
+$ escena.show(
+    "kuki_idle",
+    POS_DER,
+    PLANO_CERCANO,
+    transition = dissolve)
+    
+k"Este seria el resumen de la clase."
 
 "...."
 
 "Su resumen habia sido impecable...."
 
+
+
 $ escena.hide("alice_formal_thinking")
+
+
 
 $ escena.show(
     "alice_formal_idle",
@@ -741,23 +776,53 @@ $ escena.show(
     PLANO_CERCANO,
     transition = dissolve)
 
+$ escena.hide("kuki_idle")
+
+$ escena.show(
+    "kuki_idle_eyes_closed",
+    POS_DER,
+    PLANO_CERCANO,
+    transition = dissolve)
+
 prof"denle un aplauso a su compañera, por su magnifico dominio de nuestra historia"
 
-$ escena.hide("alice_formal_thinking")
 
-$ escena.hide("kuki_embarrassed_open_mouth")
 
-"Claramente no quería hacerlo, era como admitir que había perdido."
+$ escena.hide("alice_formal_thinking",
+transition = dissolve)
+
+$ escena.hide("kuki_idle_eyes_closed",
+transition = dissolve)
+
+"¿Pero como....?"
+
+"Ahora tenia que felicitarla...."
+
+"Obiviamente no quería hacerlo"
+
+"era como admitir que había perdido."
 
 "De inmediato todos se pararon y dieron un único aplauso que resonó por todo el aula"
 
 "Eso me incluyo"
 
-"Antes de que volvería a tomar asiento, la maestra agrego:"
+"Antes de que volvería a tomar asiento, la maestra hablo"
 
-"Alumno Yuu, lo vi algo distraído mientras su compañera nos impartía un poco de su conocimiento"
+$ escena.show(
+    "alice_formal_thinking",
+    POS_IZQ,
+    PLANO_CERCANO,
+    transition = dissolve)
 
-"Se habia dado cuenta"
+
+
+prof "Alumno Yuu"
+
+y "!...¡"
+
+prof"No pude evitar ver que estubo distraido durante toda la explicacion"
+
+"Se habia dado cuenta..."
 
 "Me habia sido imposible manterme concentrado"
 
@@ -765,21 +830,25 @@ $ escena.hide("kuki_embarrassed_open_mouth")
 
 "Nunca antes habia visto a kuki de esa manera"
 
-"—Veamos..."
+prof "Veamos..."
 
-"como el día de hoy también llego tarde"
+prof "como el día de hoy también llego tarde"
 
-"debería de asignarle un castigo."
+prof "debería de asignarle un castigo."
 
 "Castigo...?"
 
 "Mi rostro se volvió pálido."
 
-"Al final de la clase, deberá entregarme un informe sobre lo que su compañera expuso"
+prof "Al final de la clase, deberá entregarme un informe sobre lo que su compañera expuso"
 
-"Me interesa saber su oponion"
+prof "Me interesa saber su oponion"
 
-"Em.....Claro"
+$ escena.hide("alice_formal_thinking")
+
+"Em..."
+
+"Claro...."
 
 "Antes de que Kuki volviera a su pupitre, me dio una ultima mirada"
 
@@ -813,5 +882,7 @@ $ escena.hide("kuki_teasing", transition = dissolve)
 "Mientras solo me limite a entrerrar mi rostro contral el pupitre"
 
 "Completamente derrotado"
+
+stop music
 
 jump part_04
