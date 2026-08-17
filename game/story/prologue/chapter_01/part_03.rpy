@@ -877,11 +877,14 @@ ccc "..."
 
 $ escena.hide("kuki_teasing", transition = dissolve)
 
-"La clase continuo con naturalidad...."
 
-"Mientras solo me limite a entrerrar mi rostro contral el pupitre"
+camera at sacudida
+
+"Golpie mi cara contra el pupitre"
 
 "Completamente derrotado"
+
+"mientras la clase continuba con naturalidad"
 
 stop music
 

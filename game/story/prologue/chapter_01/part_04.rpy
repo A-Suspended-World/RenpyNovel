@@ -4,27 +4,104 @@ label part_04:
 
     play music AMB_RESET
 
-    scene bg aisle with dissolve
+    scene bg aisle with fade
 
-    "Unos minutos después de que acabaran las clases"
+    "..."
 
-    "me encontraba caminando por uno de los pasillos del edificio."
+    "El tiempo parecia no pasar en aquel salon"
 
-    k "Hubieras visto la cara que pusiste en ese momento JA, JA, JA"
+    y"Porfin llego el receso"
 
-    "Y a mi lado habia alguien desagradable"
+    "Exhace fuerte mientras extendia amboz brazos"
+
+    "Realmente me sentia hagotado por alguna razon...."
+
+    "Mientras seguia caminando por uno de los pasillos."
+
+    "Alguien me seguia de serca"
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco,
+        transition = dissolve
+    )
+
+
+    k "Hubieras visto la cara que pusiste alla, jejeje"
+
+    "Alguien muy molesto me estaba siguiendo...."
+
+    $ escena.hide("kuki_smile_eyes_closed")
+
+    $ escena.show (
+        "kuki_smile",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
     
-    "que no paraba de reírse de lo ocurrido en clase."
+    "Ella no paraba de reírse de lo ocurrido en clase."
 
-    k "Nome reía tanto, desde la vez que le dijiste mamá a la maestra"
+    $ escena.hide("kuki_smile_eyes_closed")
 
-    "Eso fue...."
+    $ escena.show (
+        "kuki_smile",
+        POS_CEN,
+        PLANO_CERCANO,
+        alegria
+    )
 
-    "¿AHHH como puede recordar eso?"
+    k "Enserio, Nome reía asi, desde la ultima vez"
+    
+    $ escena.hide("kuki_smile")
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO
+    )
+    
+
+    y "No lo menciones por favor...."
+
+    $ escena.hide("kuki_smile_eyes_closed")
+
+    $ escena.show (
+        "kuki_grin",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
+
+    k"Cuando le dijistes mama a la proferosa...."
+
+    $ escena.hide("kuki_grin")
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO,
+        mover_suave_fuerte
+    )
+
+    y "ahhhhhhh"
+
+    y"........."
+
+    "¿Como puede recordar eso?"
 
     "Fue hace tanto tiempo...."
 
-    "Una vez mas, empezó a tener ataques de risa descontrolada"
+    $ escena.hide("kuki_smile_eyes_closed")
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO,
+        mover_suave_fuerte
+    )
 
     k "Me muero"
 
@@ -36,44 +113,87 @@ label part_04:
 
     "En cuestión de segundos volvía a reir descontroladamente"
 
+    $ escena.hide("kuki_smile_eyes_closed")
+
     $ escena.show (
         "kuki_smile",
         POS_CEN,
         PLANO_CERCANO,
-        transition = dissolve
+        mover_suave_fuerte
     )
-
     k "Pero de la risa, solo de recordarlo! ¡HA HA HA!."
 
-    "Hasta este punto sus convulsiones y jadeos eran acompañados con destellos en su rostro"
+    "Ya me habia dado por vencido, y deje que continue"
 
-    "como gotas de agua"
+    y"Cuando pensaba que no podías ser mas desagradable, me vuelves a sorprender."
 
-    "Tenia que ser kuki..."
+    y"Y esa vez, recuerdo que también fue culpa tuya....."
 
-    "Cuando pensaba que no podía ser mas desagradable, me volvía a sorprender."
+    $ escena.hide("kuki_smile")
 
-    "Esa vez, recuerdo que también fue tu culpa....."
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
 
-    k "Ja ja ja. To tambien me sorprendo a mi misma cada vez mas!"
+    k "Ja ja ja. ¡¡Yo tambien me sorprendo a mi misma!!"
 
     "Estaba de acuerdo en eso, pero de otra manera."
 
-    "Luego de un rato de soportar su burla, ella al fin paro"
+    "Luego de unos largos minutos, ella porfin parecia estar calmandose"
 
-    "Ella arqueo su cabeza hacia mi"
+    $ escena.hide("kuki_smile_eyes_closed")
 
-    k "Y.... Me vas a contar, que fue lo realmente vistes?"
+    $ escena.show (
+        "kuki_idle_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
 
-    "Ya te lo dije, sino me quieres creer es tu problema."
+    k"TOSE TOSE"
+
+    "Ella dio unos pasos para caminar a mi lado"
+
+    $ escena.hide("kuki_idle_eyes_closed")
+
+    $ escena.show (
+        "kuki_idle",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
+
+    k "Y.... Me vas a contar, que fue lo vistes realmente?"
+
+    y "Ya te lo dije, sino me quieres creer es tu problema."
+
+    $ escena.hide("kuki_idle")
+
+    $ escena.show (
+        "kuki_serious_mouth",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
 
     k "¿Realmente quieres que crea que vistes a una mujer sin ropa?"
 
-    "¡¡No dije eso!!"
+    $ escena.hide("kuki_serious_mouth")
 
-    "¿Entonces?, digo.... aun que me sorprendiste, sigue siendo dificil de creer"
+    $ escena.show (
+        "kuki_boring",
+        POS_CEN,
+        PLANO_CERCANO
+    )
 
-    "Vi que no llevaba su traje debajo..."
+    y "¡¡No dije eso!!"
+
+    k"¿Entonces?, digo.... aun que me sorprendiste, sigue siendo dificil de creer"
+
+    y"Vi que no llevaba su traje debajo..."
 
     k "Su traje..."
 
