@@ -35,6 +35,9 @@ label test_launcher:
         "UI":
             jump test_ui
 
+        "Escena cinematográfica":
+            jump test_cinematic_scene
+
         "Guardar/Cargar":
             jump test_save_load
 

@@ -35,3 +35,14 @@ label test_dialogue_ui:
     k "Una señal comienza a {shader=jitter:0.7,2.0}fallar{/shader}."
 
     jump test_launcher
+
+
+label test_cinematic_scene:
+
+    scene bg classroom
+
+    narrator "El cuadro de diálogo está visible antes de iniciar la escena."
+    call cinematic_still("bg academy_lobby", duration=None)
+    narrator "El cuadro de diálogo y el menú rápido se restauraron correctamente."
+
+    jump test_launcher
