@@ -11,6 +11,7 @@ necesarios para ampliarlos sin duplicar código.
 ## Interfaz
 
 - [Sistema de diálogo](ui/dialogue-system.md)
+- [Escenas cinematográficas sin textbox](ui/cinematic-scenes.md)
 - [Temas de personajes](ui/character-themes.md)
 - [Efectos de texto](ui/text-effects.md)
 - [Menú rápido](ui/quick-menu.md)
@@ -19,6 +20,7 @@ necesarios para ampliarlos sin duplicar código.
 ## Guías
 
 - [Agregar un personaje](guides/adding-a-character.md)
+- [Agregar una escena cinematográfica](guides/adding-a-cinematic-scene.md)
 - [Agregar un efecto de texto](guides/adding-a-text-effect.md)
 
 ## Dependencias

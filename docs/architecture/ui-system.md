@@ -16,6 +16,12 @@ colores, fuentes y sonidos.
 - `game/ui/dialogue/effects.rpy`: animación de entrada y shader de texto.
 - `game/ui/dialogue/quick_menu.rpy`: accesos durante la historia.
 
+## Cinemáticas
+
+- `game/systems/cinematic/cinematic_mode.rpy`: oculta y restaura la interfaz
+  para planos generales o ilustraciones a pantalla completa.
+- `cinematic_still(...)`: API recomendada para un plano sin textbox.
+
 ## Convenciones
 
 1. Los estilos nuevos usan el prefijo `menu_ui_`.
