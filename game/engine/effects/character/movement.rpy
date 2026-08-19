@@ -66,6 +66,22 @@ transform brinco:
     easein .10 yoffset -35
     easeout .15 yoffset 0
 
+#---------------------------------------------------------
+# SACUDIDA LOOP
+#---------------------------------------------------------
+
+transform sacudida_loop:
+
+    block:
+
+        easein .03 xoffset 15 yoffset -10
+        easein .03 xoffset -12 yoffset 12
+        easein .03 xoffset 10 yoffset -15
+        easein .03 xoffset -15 yoffset 8
+        easein .03 xoffset 8 yoffset -5
+        easein .03 xoffset 0 yoffset 0
+
+        repeat
 
 #---------------------------------------------------------
 # SACUDIDA

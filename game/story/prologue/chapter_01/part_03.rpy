@@ -125,8 +125,10 @@ $ escena.hide("alice_formal_idle",transition=dissolve)
 
 stop music
 
-scene bg kuki_escena01 
-with dissolve
+call cinematic_still("bg kuki_escena02", duration=3.5)
+
+
+
 
 "..."
 

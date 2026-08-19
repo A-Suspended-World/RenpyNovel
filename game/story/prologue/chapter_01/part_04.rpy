@@ -20,6 +20,8 @@ label part_04:
 
     "Alguien me seguia de serca"
 
+    play music BGM_SHEN
+
     $ escena.show (
         "kuki_smile_eyes_closed",
         POS_CEN,
@@ -31,7 +33,6 @@ label part_04:
 
     k "Hubieras visto la cara que pusiste alla, jejeje"
 
-    "Alguien muy molesto me estaba siguiendo...."
 
     $ escena.hide("kuki_smile_eyes_closed")
 
@@ -125,7 +126,7 @@ label part_04:
 
     "Ya me habia dado por vencido, y deje que continue"
 
-    y"Cuando pensaba que no podías ser mas desagradable, me vuelves a sorprender."
+    y"Cuando pensaba que no podías ser mas molesta, me vuelves a sorprender Kuki...."
 
     y"Y esa vez, recuerdo que también fue culpa tuya....."
 
@@ -195,48 +196,174 @@ label part_04:
 
     y"Vi que no llevaba su traje debajo..."
 
+    $ escena.hide("kuki_boring")
+
+    $ escena.show (
+        "kuki_boring_R",
+        POS_CEN,
+        PLANO_CERCANO
+    )
+
     k "Su traje..."
+
+    $ escena.hide("kuki_boring_R")
+
+    $ escena.show (
+        "kuki_disgust_hid_mouth_o",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
 
     k "Te refieres al ¿Skinsuit?"
 
     "Asi es, no parecia llevarlo"
 
-    k "Eso es increible, ¿es casi como estar desnudo no?"
+    $ escena.hide("kuki_disgust_hid_mouth_o")
 
-    "Ella empezo a tocar su cuerpo por alguna razon..."
+    $ escena.show (
+        "kuki_thinking",
+        POS_CEN,
+        PLANO_CERCANO
+    )
 
-    "Podrías adstener de hacer eso?, es desagradable."
+    k "Eso es..... increible"
 
-    k "Solo pensaba que no habría ninguna diferencia si es que no lo llevara"
+    k"¿es casi como estar desnudo no?"
 
-    "Estas loca?, sabes que sin eso se te ve todo lo innombrable"
+    "Asenti a su respuesta"
 
-    k"Que importa, la ropa de encima cubre las partes importantes"
+    $ escena.hide("kuki_thinking")
 
-    k"Aparte, no creo no puedas definir si alguien esta vestida, si o no solo con eso"
+    $ escena.show (
+        "kuki_thinking_looking_right",
+        POS_CEN,
+        PLANO_CERCANO,
+        cansancio
+    )
 
-    "Para mi si..."
+    "Por alguna extraña razon, ella empezo a tocaquetear su cuerpo..."
 
-    "Espera, ¿Entonces me crees?"
+    y"Podrías adstener de hacer eso?, es desagradable."
+
+    k "Ahora que lo pienso..."
+
+    $ escena.hide("kuki_thinking_looking_right")
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
+
+
+    k "¿Realmente hay diferencia?"
+
+    k "Digo"
+
+    $ escena.hide("kuki_smile_eyes_closed")
+
+    $ escena.show (
+        "kuki_teasing",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
+
+    k "Entre llevar uno, y no llevar nada"
+
+    $ escena.hide("kuki_teasing")
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO
+    )
+
+    y"Estas loca?, Eso practicamente estar desnudo...."
+
+    $ escena.hide("kuki_smile_eyes_closed")
+
+    $ escena.show (
+        "kuki_confused",
+        POS_CEN,
+        PLANO_CERCANO
+    )
+
+    k"Pero, ¿Nuestros unifrome no cubren las partes importantes?"
+
+    y "Lo que me refiero es que...."
+
+    k"Aparte, el traje nadie lo puede ver, amenos que te desvistas"
+
+    k"Me daria mas vergueza estar sin el uniforme"
+
+    k "A no llevar un traje"
+
+    "No sabia que como responderle"
+
+    "Por alguna razon, yo no opinaba lo mismo"
+
+    y"Espera, ¿Entonces si me crees?"
+
+    $ escena.hide("kuki_confused")
+
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO
+    )
 
     k "Que va, creo que deberías empezar a dormir mejor"
+
+    $ escena.hide("kuki_smile_eyes_closed")
+
+    $ escena.show (
+        "kuki_smile",
+        POS_CEN,
+        PLANO_CERCANO
+    )
     
     k "andas aluciando cosas."
 
     "Realmente no debí preguntar"
 
-    "Pero...si estas interesado en ver como se ve una mujer de verdad"
+    $ escena.hide("kuki_smile")
 
-    "Entonces...."
+    $ escena.show (
+        "kuki_smile_eyes_closed",
+        POS_CEN,
+        PLANO_CERCANO
+    )
+
+    k "Pero...si realmente estas interesado en ver como se ve una mujer de verdad"
+
+    k"Entonces...."
 
     "Kuki empezo a bajar lentamente su cierre y dio media vuelta."
+    
+    $ escena.hide("kuki_smile_eyes_closed")
 
-    "Yo podría en.... ¿Ah?, a donde fue."
+    $ escena.show (
+        "kuki_smile",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
+    
+    k"Yo podría en.... "
+    
+    $ escena.hide("kuki_smile")
 
+    $ escena.show (
+        "kuki_embarrassed",
+        POS_CEN,
+        PLANO_CERCANO
+    )
 
+    k"¿Ah?, a donde fue."
 
-
-
-
+    $ escena.hide("kuki_embarrassed", transition = dissolve)
 
 jump part_05

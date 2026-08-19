@@ -79,3 +79,7 @@ define TRAN_PIANO6 ="assets/audio/music/transitions/Piano Jingle 6.ogg"
 define VOICE_KUKI_001 = "assets/audio/voice/kuki/001.ogg"
 
 define VOICE_ELEN_001 = "assets/audio/voice/elen/001.ogg"
+
+
+#FALTA ORGANIZAR:
+define SFX_allowing = "assets/audio/Sonidos para novela/interface_allowing.mp3"
