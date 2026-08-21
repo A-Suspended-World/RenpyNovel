@@ -322,7 +322,7 @@ label pedido_confirmado:
 
     "De inmediato saque mi celular"
 
-    "Con una mano tembloro intente revisar saldo"
+    "Con una mano tembloro intente revisar mi saldo"
 
     "Mientras me imaginaba los números negativos en mi cuenta"
 
@@ -330,9 +330,223 @@ label pedido_confirmado:
 
     "Cuando vi mi saldo intacto"
 
-    "¿Ningún cambio?, es mas, esta igual que hace un momento."
+    "...¿Ningún cambio?, es mas, esta igual que hace un momento."
+
+    "No pude evitar soltar un largo suspiro"
+
+    "ja ja ja...."
 
     "Obviamente era un error, no se porque me preocupe...."
+
+    "mmmmm"
+
+    "Aun tenia la lata en mi mano"
+
+    y "¿No me descontaron nada, deberia devolverla?"
+
+    y "Pero...."
+
+    "Mire atentamente aquella lata"
+
+    "Trage saliva"
+
+    "Probar un sorbo no estaria mal...."
+
+    "Mire hacia todas las direcciones posibles, asegurandome que nadie me viera"
+
+    "No queria que nadie me viera tan entuciasmado por una bebida"
+
+    "Retire el seguro de la lata, y lentamente acerce mis labios"
+
+    "Tome un ligero sorbo"
+
+    "¡¡...!!"
+
+    "Ureka"
+
+    "El sabor invaida mis papilas gustativas"
+
+    "Sin darme cuenta, ya habia inclinado toda la lata"
+
+    "Una fuerte sensacion de realizacion callo sobre mi"
+
+    y"Delicius"
+
+    "Mis parpados empezaron a sentirse algo cansados por alguna razon"
+
+    "Rapidamente me apoye en una pared"
+
+    y"Que...me siento mas cansado de lo usual...."
+
+    "...."
+
+    scene black with dissolve
+
+    "Mi conciencia se desbanecio"
+
+    "...."
+
+    k "¿Que haces alli tirado?"
+
+    k "Oye, oye"
+
+    k "Despierta, sino...."
+
+    y "...."
+
+    "Mis ojos se empezaro a abri lentamente"
+
+    y "...."
+
+    y "¿Puedo saber porque estas tocando mi cara?"
+
+    k "Oh, despertaste"
+
+    "Que estaba haciendo...."
+
+    "Sentia un poco adolorida la cabeza"
+
+    "Luego por lo demas"
+
+    "Recordaba haber estaba bebiendo una soda y de repente..."
+
+    k "Las clases ya acabaron, ¿porque sigues aqui?"
+
+    y "Las clases...?"
+
+    "Mire por la ventana, pude ver el cielo pintado de naranja"
+
+    "!....¡"
+
+    "Esto era malo"
+
+    "Muy malo"
+
+    "De inmediato me levante"
+
+    y "!Mi toque de queda¡"
+
+    "Empece a caminar hacia la salida, sabia que no iba a lograr llegar a tiempo"
+
+    "Pero llegar aun mas tarde seria peor"
+
+    k "Oye espera¡¡"
+    
+    "No tenia tiempo para una de sus bromas"
+
+    "El asunto era serio"
+
+    "Tenia que apresurarme"
+
+    y "Sera en otro momento tengo que apresurarme"
+
+    k "Solo sera un momento, porfavar"
+
+    k "¿VA VA?"
+
+    "Me detube por un momento"
+
+    "Kuki no suele ser tan insistente..."
+
+    y "Si es otra de tus bromas..."
+
+    k "como crees? jejeje"
+
+    y "..."
+
+    k "Okey okey, dame un momento"
+
+    "Kuki se paro frente a mi y cerro los ojos"
+
+    y "Puedo saber exactamente que estas haciendo?"
+
+    "Pero no hubo respuesta alguna"
+
+    "Cuando estaba apunto de irme de dar la vuelta, al fin lo recorde"
+
+    y "Conexion mental?"
+
+    "Porque haria eso..."
+
+    "Se necesita mucha concentracion para ello"
+
+    y"no me puedes oir ni ver, me imagino"
+
+    "Pase mi mano sobre su cara para comprobarlo"
+
+    "Entonces si tenia razon"
+
+    "Unos minutos despues"
+
+    "Kuki dejo su estado de concentracion y abrio de par en par ambos ojos"
+
+    "Unos destellos brotaron de sus ojos antes de apagarse"
+
+    "Ahora los ojos de kuki volvieron a la normalidad"
+
+    k "Mhn Esto....Puedo saber que estas haciendo?"
+
+    y "Te estoy devolviendo lo de antes"
+
+    "No recuerdo haber jugado de esta manera con tus cachetes"
+
+    "Ella dijo eso, mientras yo seguia estirandolos"
+
+    k "Ya es suficiente!!"
+
+    "Fui empujado por kuki"
+
+    k"Se avisa antes de hacer esas cosas..."
+
+    "Como si tu avisaras, quise decirle, pero me contube, ya me habia cobrado con creces"
+
+    y"Entonces eso es todo?"
+
+    "Un sonido vino desde mi bolsillo derecho"
+
+    "Y esto?"
+
+    "Al sacar mi celular, encontre un nuevo mensaje"
+
+    "Era una grabacion de la clase"
+
+    y "Esto es..."
+
+    k "Supuse que no prestaste atencion, otra vez"
+
+    k "Como te veias tan aflijido luego del castigo que te dejaron"
+
+    k "Pense que si te daba esto, tal vez te podria ayudar en algo"
+
+    Y "No hacia falta..."
+
+    "Realmente lo hacia"
+
+    "Me salvastes el pellejo queria decirle, pero no encontraba la forma"
+
+    y "Kuki..."
+
+    k "No se te hace tarde?"
+
+
+    y "Ahhh, es cierto"
+
+    
+
+    $ escena.hide("kuki_idle")
+
+    $ escena.show (
+        "kuki_idle",
+        POS_CEN,
+        PLANO_CERCANO,
+        brinco
+    )
+
+    k "Ah, aqui estabas"
+
+
+
+
 
    
     ## Establishing shot: the textbox and quick menu remain hidden while the
