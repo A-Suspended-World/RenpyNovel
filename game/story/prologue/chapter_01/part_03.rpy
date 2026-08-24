@@ -9,6 +9,38 @@ play music BGM_OPENING
 
 "Me detuve frente al aula C3."
 
+scene black
+
+show alice F_I at left
+show kuki F_I at right
+
+pause 2
+
+"."
+
+hide alice
+hide kuki
+
+show alice M_I at left
+show kuki M_I at right
+
+pause 2
+
+"."
+
+hide alice
+hide kuki
+
+show alice C_I at left
+show kuki C_I at right
+
+pause 2
+
+"."
+
+hide alice
+hide kuki
+
 "dude antes de entrar."
 
 "¿De verdad debería entrar ahora?"
@@ -48,7 +80,7 @@ $ escena.show(
     "alice_formal_idle",
     POS_CEN,
     PLANO_CERCANO,
-    rebote,
+    aparecer_rapido_acercamiento,
     transition = dissolve
 )
 

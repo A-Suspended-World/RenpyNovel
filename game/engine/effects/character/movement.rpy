@@ -271,3 +271,26 @@ transform risa:
 
     easein .06 xoffset 0
 
+#---------------------------------------------------------
+# APARICIÓN RÁPIDA
+#---------------------------------------------------------
+# El personaje aparece rápidamente mediante un dissolve
+# corto, sin movimiento ni zoom.
+#---------------------------------------------------------
+
+transform aparecer_rapido:
+
+    alpha 0.0
+
+    ease .08 alpha 1.0
+
+transform aparecer_rapido_acercamiento:
+
+    alpha 0.0
+    zoom 0.96
+    yoffset 10
+
+    ease .23:
+        alpha 1.0
+        zoom 1.0
+        yoffset 0
